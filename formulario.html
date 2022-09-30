@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <form role="form" method="post" accept="index.php" class="form">
+      <label for="titulo">T&iacute;tulo</label>
+      <input
+        type="text"
+        name="titulo"
+        id="tituloForm"
+        placeholder="Título"
+      /><br /><br />
+
+      <label for="fecha">Fecha</label>
+      <input type="date" name="fecha" id="fechaForm" /><br /><br />
+
+      <label for="ciudad">Ciudad</label>
+      <input type="text" name="ciudad" id="ciudadForm" placeholder="Ciudad"/><br /><br />
+
+      <label for="tipo">Tipo</label>
+
+      <select name="tipo" id="selectForm">
+        <option value="" selected>Seleccione el tipo de actividad</option>
+        <option value="musica">M&uacute;sica</option>
+        <option value="cine">Cine</option>
+        <option value="comida">Comida</option>
+        <option value="copas">Copas</option>
+        <option value="cultura">Cultura</option>
+        <option value="viajes">Viajes</option></select
+      ><br /><br />
+
+      <input type="radio" name="precio" value="gratis" id="gratuito" checked />
+      <label for="gratuito">Gratis</label>
+      <input type="radio" name="precio" value="De pago" id="dePago" />
+      <label for="dePago">De pago</label><br /><br />
+
+      <input
+        class="boton"
+        type="submit"
+        value="Crear Actividad"
+        name="botonEnviar"
+      />
+    </form>
+  </body>
+</html>

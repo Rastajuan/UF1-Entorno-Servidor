@@ -1,0 +1,85 @@
+
+/* *{
+    margin: 0;
+    border: 0ch;
+    padding: 0;
+} */
+
+html{
+    background-color: red;
+}
+body{
+    background-color: rgb(80, 151, 153);
+   
+}
+
+header{
+    border: 3px solid orange;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid white;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#containerActividad, #formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 45%;
+    border: 3px solid yellow;
+    padding: 10px;
+    /* margin-bottom: 500px; */
+}
+#formulario{
+    display: flex;;
+    border-radius: 25px;
+    text-align:left;
+    padding-right: 10px;
+    
+}
+
+#footer{
+    border: 2px solid white;
+    text-align: center;
+}
+
+/* .boton{
+    border-radius: 5px;
+    border-color:darkgreen;
+    background-color: rgb(138, 182, 138);
+    float: right;
+    margin-right: 35px;
+} */
+
+.form {
+  width: 100%;
+  /* margin: 0 auto; */
+  /* display:flow-root; */
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* justify-content:flex-start; */
+  /* align-items:flex-start; */
+}
+
+.form input {
+  width: 70%;
+  margin: 0.5rem;
+}
+
+.form label{
+    width:40px;
+}
+
+.form button {
+  padding: 0.5em 1em;
+  border: none;
+  background: rgb(100, 200, 255);
+}
+
+
