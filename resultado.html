@@ -1,3 +1,4 @@
+<!--HACEMOS DINAMICO EL VALOR DE CADA <td> ASIGNANDOLE EL VALOR DEL OBJETO $actividad CON CADA UNO DE SUS PARAMETROS QUE SON LOS QUE HA ENVIADO EL FORMULARIO-->
 <section>
   <img class="imgs" src="./imgs/<?php echo $actividad->tipo ?>.jpg" />
   <fieldset>
@@ -9,6 +10,7 @@
       </tr>
       <tr>
         <td class="negrita">Fecha:</td>
+        <!-- Se formatea el formato de fecha por defecto con la función 'strostring'-->
         <td><?php echo date("d/m/Y", strtotime($actividad->fecha)) ?></td>
       </tr>
       <tr>

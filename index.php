@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- REQUERIMOS LA CARGA DEL ARCHIVO DONDE TENEMOS CREADA LA CLASE PHP DE CREACION DE OBJETOS 'ACTIVIDAD' -->
+<!-- REQUERIMOS LA CARGA DEL ARCHIVO DONDE TENEMOS CREADA LA CLASE PHP 'ACTIVIDAD' -->
 <?php require "actividad.php"; ?>
 
 <!-- SI SE HA ENVIADO EL FORMULARIO MEDIANTE EL BOTON "botonEnviar" SE CREARA UN OBJETO DE CLASE ACTIVIDAD ($actividad) MEDIANTE LA FUNCION CONSTRUCTORA CON LOS PARAMETROS ENVIADOS POR EL FORMULARIO
@@ -27,9 +27,12 @@ if (isset($_POST["botonEnviar"])) {
 </head>
 
 <body>
-    <header>
-        <h1>FORMULARIO DE ACTIVIDADES</h1>
-    </header>
+    <div class="header">
+        <header>
+            <h1>FORMULARIO DE ACTIVIDADES</h1>
+        </header>
+    </div>
+
     <div class="container" id="cont">
         <!-- Incluimos el formulario desde un archivo externeo 'formulario.html' con php -->
         <div class="formulario" id="form">
@@ -42,7 +45,7 @@ if (isset($_POST["botonEnviar"])) {
         LOS DOS PUNTOS (:) DESPUES DE LA CONDICION DEL IF INDICA QUE EL IF QUEDA ABIERTO Y QUE LO QUE ESTÁ DESPUÉS OCURRIRÁ SOLO SI SE CUMPLE LA CONDICION DEL IF-->
         <?php if (isset($actividad)) : ?>
 
-            <!--HACEMOS DINAMICO EL VALOR DE CADA <li> ASIGNANDOLE EL VALOR DEL OBJETO $actividad CON CADA UNO DE SUS PARAMETROS QUE SON LOS QUE HA ENVIADO EL FORMULARIO-->
+
 
             <div class="resultados" id="result">
                 <!-- Incluimos el resultado desde un archivo externeo 'resultado.html' con php -->
@@ -54,7 +57,9 @@ if (isset($_POST["botonEnviar"])) {
     </div>
     <div class=" footer" id="foot">
         <footer>
-            <p>Actividad realizada por <strong>Juan Bello Fernández</strong> perteneciente a la UF1 de Diseño Web en Entorno Servidor</p>
+            <p>©Copyleft 2022 <strong>Juan Bello Fernández</strong> </br> Trabajo perteneciente a la UF1 de Diseño Web en Entorno Servidor. 2º DAW</p>
+
+            </p>
 
         </footer>
     </div>
